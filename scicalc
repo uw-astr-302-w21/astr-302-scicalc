@@ -46,6 +46,11 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def cos(x):
+	"""Return a cosine function of x in radians"""
+	
+	return math.cos(x)
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -56,6 +61,7 @@ operators = {
 	'sum': add,
 	'log10': log10,
 	'mul': mul,
+	'cos': cos,
 }
 
 if __name__ == "__main__":
