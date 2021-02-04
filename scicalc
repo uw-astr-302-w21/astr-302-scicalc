@@ -27,6 +27,11 @@ def die_with_usage(message):
 #     the function must raise a ValueError.
 #
 
+def sin(x):
+	"""take the sine of an angle given in degrees"""
+
+	return math.sin(math.radians(x))
+
 def add(*args):
 	"""Add a list of numbers"""
 
@@ -48,6 +53,7 @@ def log10(x):
 operators = {
 	'add': add,
 	'sum': add,
+	'sin': sin,
 	'log10': log10,
 }
 
