@@ -41,22 +41,29 @@ def log10(x):
 	return math.log10(x)
 
 def mul(*args):
-	"""Multiply a list of numbers"""
-	
-	prod = 1.0
-	for arg in args:
-		prod *= arg
-	return prod
+    """Multiply a list of numbers"""
+    prod = 1.0
+    for arg in args:
+        prod *= arg
+    return prod
+
+
+def asin(x):
+    """Takes arcsine/inverse sine of angle x. x must be in between -1 and 1. Returns degrees."""
+    
+    return round(math.degrees(math.asin(x)),3)
 
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
 # for the same operator (e.g., 'add' and 'sum').
 #
+
 operators = {
 	'add': add,
 	'sum': add,
 	'mul': mul,
+        'asin': asin,
 	'log10': log10,
 }
 
