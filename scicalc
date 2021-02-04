@@ -29,8 +29,8 @@ def die_with_usage(message):
 
 def sin(x):
 	"""take the sine of an angle given in degrees"""
-
-	return math.sin(math.radians(x))
+	
+return math.sin(math.radians(x))
 
 def add(*args):
 	"""Add a list of numbers"""
