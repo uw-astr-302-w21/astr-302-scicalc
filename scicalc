@@ -34,6 +34,14 @@ def add(*args):
 	for arg in args:
 		sum += arg
 	return sum
+    
+def sub(*args):
+	"""Substracts all subsequent numbers in a list from the first number"""
+
+	sub = args[0]
+	for arg in args[1:]:
+		 sub -= arg
+	return sub
 
 def log10(x):
 	"""Return a base-10 logarithm of x"""
@@ -58,6 +66,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'sub': sub,
 }
 
 if __name__ == "__main__":
