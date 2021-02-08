@@ -51,8 +51,6 @@ def mul(*args):
 def log(base,x):
 	"""Return a logarithm (of of any base base) of x"""
 	
-	#base = args[0]
-	#x = args[1]
 	return math.log(x, base)
 
 #
