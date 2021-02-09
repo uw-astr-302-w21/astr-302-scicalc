@@ -49,9 +49,9 @@ def mul(*args):
 	return prod
     
 def root(x,y):
-    """Take the Nth root of a number"""
-    
-    return y**(1/x)    
+	"""Take the Nth root of a number"""
+	    
+ 	return y**(1/x)    
 
 
 #
@@ -64,7 +64,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
-    'root': root,
+	'root': root,
 }
 
 if __name__ == "__main__":
