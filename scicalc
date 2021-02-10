@@ -40,6 +40,11 @@ def log10(x):
 	
 	return math.log10(x)
 
+def tang(a):
+	"""inputs are floats and in degrees and output will be tangent of input"""
+	self.state = math.tan(a)
+	return self.state
+
 def mul(*args):
 	"""Multiply a list of numbers"""
 	
