@@ -48,6 +48,10 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def inv(x):
+	"""Return the inverse of a number"""
+	return 1/x
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -56,6 +60,7 @@ def mul(*args):
 operators = {
 	'add': add,
 	'sum': add,
+	'inv': inv,
 	'mul': mul,
 	'log10': log10,
 }
