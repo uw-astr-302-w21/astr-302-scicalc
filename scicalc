@@ -48,6 +48,11 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def pow(x, y):
+	"""Takes a number (x) and exponentiate to a power (y)"""
+	
+	return x**y
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -58,6 +63,8 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'pow': pow,
+	'exp': pow,
 }
 
 if __name__ == "__main__":
