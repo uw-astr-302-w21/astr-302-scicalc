@@ -48,13 +48,15 @@ def mul(*args):
 		prod *= arg
 	return prod
 
-def div(*args):
-    """Division function that divides by an input"""
-    prod = 1.0
+
+def div(x, *args):
+    """Division function that divides an input x, by an another input arg"""
+    """To divide fractions, give them as decimals"""
     for arg in args:
-        prod /= arg
+        prod = x / arg
     return prod
-#
+
+
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
 # for the same operator (e.g., 'add' and 'sum').
