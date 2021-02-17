@@ -47,6 +47,14 @@ def mul(*args):
 	for arg in args:
 		prod *= arg
 	return prod
+    
+def abs(x):
+	"""Return absolute value of number"""
+
+	if x < 0:
+		return -x
+	else:
+		return x
 
 #
 # The dictionary that maps the command-line name of the operation,
@@ -58,6 +66,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'abs': abs
 }
 
 if __name__ == "__main__":
