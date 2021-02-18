@@ -1,0 +1,4 @@
+def log(base,x):
+	"""Returns the natural log of x"""
+  
+	return math.log(x)
