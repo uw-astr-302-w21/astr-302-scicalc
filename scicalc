@@ -47,6 +47,12 @@ def mul(*args):
 	for arg in args:
 		prod *= arg
 	return prod
+    
+def acos(*args):
+    """Returns the inverse cosine of an output in radians"""
+    
+    for arg in args:
+        return math.acos(arg)
 
 #
 # The dictionary that maps the command-line name of the operation,
@@ -58,6 +64,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+    'acos' : acos
 }
 
 if __name__ == "__main__":
