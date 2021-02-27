@@ -53,6 +53,10 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def negOp(x):
+	"""Return the negative of x"""
+	
+	return(-1 * x)
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -63,6 +67,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'negOp': negOp,
 	'tang': tang,
 }
 
