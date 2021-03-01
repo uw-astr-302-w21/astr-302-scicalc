@@ -57,6 +57,11 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def log(base,x):
+	"""Return a logarithm (of of any base base) of x"""
+	
+	return math.log(x, base)
+
 def sqrt(x):
 	"""Return square root of x"""
 	return math.sqrt(x)
@@ -87,6 +92,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'log': log,
 	'floordiv': floordiv,
 	'sqrt': sqrt,
 	'ceil':ceil,
