@@ -138,6 +138,11 @@ def cos(x):
 	
 	return math.cos(x)
 
+def log(base,x):
+	"""Returns the natural log of x"""
+
+	return math.log(x)
+
 def negOp(x):
 	"""Return the negative of x"""
 	
@@ -154,6 +159,7 @@ operators = {
 	'sin': sin,
 	'mul': mul,
 	'log10': log10,
+	'log': log,
   'acos' : acos,
 	'abs': abs,
 	'arcsin':arcsin,
