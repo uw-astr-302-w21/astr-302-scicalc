@@ -40,8 +40,16 @@ def log10(x):
 	
 	return math.log10(x)
 
+
+def tang(a):
+	"""inputs are floats and in degrees and output will be tangent of input"""
+	self.state = math.tan(a)
+	return self.state
+
 def mul(*args):
-	prod = 1.0 
+	"""Multiply a list of numbers"""
+	
+	prod = 1.0
 	for arg in args:
 		prod *= arg
 	return prod
@@ -51,6 +59,11 @@ def cos(x):
 	
 	return math.cos(x)
 
+
+def negOp(x):
+	"""Return the negative of x"""
+	
+	return(-1 * x)
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -59,9 +72,12 @@ def cos(x):
 operators = {
 	'add': add,
 	'sum': add,
+	'mul': mul,
 	'log10': log10,
 	'mul': mul,
 	'cos': cos,
+	'negOp': negOp,
+	'tang': tang
 }
 
 if __name__ == "__main__":
