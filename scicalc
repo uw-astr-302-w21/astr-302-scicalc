@@ -75,6 +75,12 @@ def mul(*args):
 		prod *= arg
 	return prod
     
+def acos(*args):
+    """Returns the inverse cosine of an output in radians"""
+    
+    for arg in args:
+        return math.acos(arg)
+
 def abs(x):
 	"""Return absolute value of number"""
 
@@ -148,6 +154,7 @@ operators = {
 	'sin': sin,
 	'mul': mul,
 	'log10': log10,
+  'acos' : acos,
 	'abs': abs,
 	'arcsin':arcsin,
 	'pow': pow,
