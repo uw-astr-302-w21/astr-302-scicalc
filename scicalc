@@ -40,6 +40,12 @@ def log10(x):
 	
 	return math.log10(x)
 
+
+def tang(a):
+	"""inputs are floats and in degrees and output will be tangent of input"""
+	self.state = math.tan(a)
+	return self.state
+
 def mul(*args):
 	"""Multiply a list of numbers"""
 	
@@ -51,6 +57,23 @@ def mul(*args):
 def sqrt(x):
 	"""Return square root of x"""
 	return math.sqrt(x)
+
+def ceil(x):
+	"""Rounds number to next largest integer"""
+	
+	return math.ceil(x)
+
+
+def cos(x):
+	"""Return a cosine function of x in radians"""
+	
+	return math.cos(x)
+
+
+def negOp(x):
+	"""Return the negative of x"""
+	
+	return(-1 * x)
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -62,6 +85,11 @@ operators = {
 	'mul': mul,
 	'log10': log10,
 	'sqrt': sqrt,
+	'ceil':ceil,
+	'mul': mul,
+	'cos': cos,
+	'negOp': negOp,
+	'tang': tang
 }
 
 if __name__ == "__main__":
