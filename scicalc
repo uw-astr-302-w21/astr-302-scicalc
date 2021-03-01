@@ -54,6 +54,10 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def sqrt(x):
+	"""Return square root of x"""
+	return math.sqrt(x)
+
 def ceil(x):
 	"""Rounds number to next largest integer"""
 	
@@ -80,6 +84,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'sqrt': sqrt,
 	'ceil':ceil,
 	'mul': mul,
 	'cos': cos,
