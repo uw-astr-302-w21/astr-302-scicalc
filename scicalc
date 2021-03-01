@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 #
 # A simple command-line scientific calculator.
@@ -27,6 +28,15 @@ def die_with_usage(message):
 #     the function must raise a ValueError.
 #
 
+def sin(x):
+	"""take the sine of an angle given in degrees"""
+	
+	return math.sin(math.radians(x))
+
+def deg2rad(x):
+	"""Return a radian equivalent of x originaly in degrees"""
+	return (x*math.pi)/180
+
 def add(*args):
 	"""Add a list of numbers"""
 
@@ -48,6 +58,15 @@ def log10(x):
 	
 	return math.log10(x)
 
+def floordiv(a, b):
+	"""Takes the floor division of two numbers"""
+	return a//b
+
+def tang(a):
+	"""inputs are floats and in degrees and output will be tangent of input"""
+	self.state = math.tan(a)
+	return self.state
+
 def mul(*args):
 	"""Multiply a list of numbers"""
 	
@@ -55,7 +74,51 @@ def mul(*args):
 	for arg in args:
 		prod *= arg
 	return prod
+    
+def root(x,y):
+	"""Take the Nth root of a number"""
+	    
+	return y**(1/x)    
 
+def exp(x):
+    """Return Euler's number to the power of x"""
+    
+    return math.exp(x)
+
+def log(base,x):
+	"""Return a logarithm (of of any base base) of x"""
+	
+	return math.log(x, base)
+
+def inv(x):
+	"""Return the inverse of a number"""
+	return 1/x
+
+def sqrt(x):
+	"""Return square root of x"""
+	return math.sqrt(x)
+
+def ceil(x):
+	"""Rounds number to next largest integer"""
+	
+	return math.ceil(x)
+
+def div(x, *args):
+    """Division function that divides an input x, by an another input arg"""
+    """To divide fractions, give them as decimals"""
+    for arg in args:
+        prod = x / arg
+    return prod
+
+def cos(x):
+	"""Return a cosine function of x in radians"""
+	
+	return math.cos(x)
+
+def negOp(x):
+	"""Return the negative of x"""
+	
+	return(-1 * x)
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -64,9 +127,23 @@ def mul(*args):
 operators = {
 	'add': add,
 	'sum': add,
+	'inv': inv,
+	'sin': sin,
 	'mul': mul,
 	'log10': log10,
 	'sub': sub,
+	'div': div,
+	'root': root,
+  'deg2rad':deg2rad,
+  'exp': exp,
+	'log': log,
+	'floordiv': floordiv,
+	'sqrt': sqrt,
+	'ceil':ceil,
+	'mul': mul,
+	'cos': cos,
+	'negOp': negOp,
+	'tang': tang
 }
 
 if __name__ == "__main__":
