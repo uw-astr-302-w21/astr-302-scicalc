@@ -68,7 +68,6 @@ def tang(a):
 	return self.state
 
 def mul(*args):
-<<<<<<< HEAD
 	"""Multiply a list of numbers"""
 	
 	prod = 1.0
@@ -160,18 +159,10 @@ def fact(n):
         for i in range(1,int(n)+1):
             fact *= i
         return fact
-=======
-    """Multiply a list of numbers"""
-    prod = 1.0
-    for arg in args:
-        prod *= arg
-    return prod
-
 
 def asin(x):
     """Takes arcsine/inverse sine of angle x. x must be between -1 and 1. Returns degrees."""
     return round(math.degrees(math.asin(x)),3)
->>>>>>> 453313847a8c1d7119517d66b8a6438c28f35896
 
 #
 # The dictionary that maps the command-line name of the operation,
@@ -185,7 +176,7 @@ operators = {
 	'inv': inv,
 	'sin': sin,
 	'mul': mul,
-        'asin': asin,
+    'asin': asin,
 	'log10': log10,
 	'log': log,
     'acos' : acos,
