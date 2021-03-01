@@ -147,6 +147,19 @@ def negOp(x):
 	"""Return the negative of x"""
 	
 	return(-1 * x)
+
+def fact(n): 
+    """Returns the factorial of a number."""
+    if n < 0: 
+        return 'na'
+    elif n == 0:
+        return 1
+    else:
+        fact = 1
+        for i in range(1,int(n)+1):
+            fact *= i
+        return fact
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -160,23 +173,24 @@ operators = {
 	'mul': mul,
 	'log10': log10,
 	'log': log,
-  'acos' : acos,
+    'acos' : acos,
 	'abs': abs,
 	'arcsin':arcsin,
 	'pow': pow,
 	'sub': sub,
 	'div': div,
 	'root': root,
-  'deg2rad':deg2rad,
-  'exp': exp,
-	'log': log,
+    'deg2rad':deg2rad,
+    'exp': exp,
+  	'log': log,
 	'floordiv': floordiv,
 	'sqrt': sqrt,
 	'ceil':ceil,
 	'mul': mul,
 	'cos': cos,
 	'negOp': negOp,
-	'tang': tang
+	'tang': tang,
+    'fact': fact
 }
 
 if __name__ == "__main__":
