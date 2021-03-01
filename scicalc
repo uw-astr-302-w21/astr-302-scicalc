@@ -40,6 +40,9 @@ def log10(x):
 	
 	return math.log10(x)
 
+def floordiv(a, b):
+	"""Takes the floor division of two numbers"""
+	return a//b
 
 def tang(a):
 	"""inputs are floats and in degrees and output will be tangent of input"""
@@ -84,6 +87,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'floordiv': floordiv,
 	'sqrt': sqrt,
 	'ceil':ceil,
 	'mul': mul,
