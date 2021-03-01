@@ -54,6 +54,12 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def ceil(x):
+	"""Rounds number to next largest integer"""
+	
+	return math.ceil(x)
+
+
 def cos(x):
 	"""Return a cosine function of x in radians"""
 	
@@ -74,6 +80,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'ceil':ceil,
 	'mul': mul,
 	'cos': cos,
 	'negOp': negOp,
