@@ -91,6 +91,13 @@ def ceil(x):
 	
 	return math.ceil(x)
 
+def div(x, *args):
+    """Division function that divides an input x, by an another input arg"""
+    """To divide fractions, give them as decimals"""
+    for arg in args:
+        prod = x / arg
+    return prod
+
 def cos(x):
 	"""Return a cosine function of x in radians"""
 	
@@ -111,6 +118,7 @@ operators = {
 	'sin': sin,
 	'mul': mul,
 	'log10': log10,
+	'div': div,
 	'root': root,
   'deg2rad':deg2rad,
   'exp': exp,
