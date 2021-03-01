@@ -28,10 +28,14 @@ def die_with_usage(message):
 #     the function must raise a ValueError.
 #
 
+def sin(x):
+	"""take the sine of an angle given in degrees"""
+	
+	return math.sin(math.radians(x))
+
 def deg2rad(x):
 	"""Return a radian equivalent of x originaly in degrees"""
 	return (x*math.pi)/180
-
 
 def add(*args):
 	"""Add a list of numbers"""
@@ -68,7 +72,6 @@ def root(x,y):
 	    
 	return y**(1/x)    
 
-
 def exp(x):
     """Return Euler's number to the power of x"""
     
@@ -88,12 +91,10 @@ def ceil(x):
 	
 	return math.ceil(x)
 
-
 def cos(x):
 	"""Return a cosine function of x in radians"""
 	
 	return math.cos(x)
-
 
 def negOp(x):
 	"""Return the negative of x"""
@@ -107,6 +108,7 @@ def negOp(x):
 operators = {
 	'add': add,
 	'sum': add,
+	'sin': sin,
 	'mul': mul,
 	'log10': log10,
 	'root': root,
