@@ -85,6 +85,10 @@ def exp(x):
     
     return math.exp(x)
 
+def arcsin(x):
+	"""Return value of arcsin of value x"""
+	return math.asin(x)
+
 def log(base,x):
 	"""Return a logarithm (of of any base base) of x"""
 	
@@ -136,6 +140,7 @@ operators = {
 	'sin': sin,
 	'mul': mul,
 	'log10': log10,
+	'arcsin':arcsin,
 	'pow': pow,
 	'sub': sub,
 	'div': div,
