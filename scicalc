@@ -40,6 +40,7 @@ def log10(x):
 	
 	return math.log10(x)
 
+
 def tang(a):
 	"""inputs are floats and in degrees and output will be tangent of input"""
 	self.state = math.tan(a)
@@ -52,6 +53,12 @@ def mul(*args):
 	for arg in args:
 		prod *= arg
 	return prod
+
+def cos(x):
+	"""Return a cosine function of x in radians"""
+	
+	return math.cos(x)
+
 
 def negOp(x):
 	"""Return the negative of x"""
@@ -67,8 +74,10 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+	'mul': mul,
+	'cos': cos,
 	'negOp': negOp,
-	'tang': tang,
+	'tang': tang
 }
 
 if __name__ == "__main__":
