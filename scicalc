@@ -75,6 +75,14 @@ def mul(*args):
 		prod *= arg
 	return prod
     
+def abs(x):
+	"""Return absolute value of number"""
+
+	if x < 0:
+		return -x
+	else:
+		return x
+  
 def root(x,y):
 	"""Take the Nth root of a number"""
 	    
@@ -140,6 +148,7 @@ operators = {
 	'sin': sin,
 	'mul': mul,
 	'log10': log10,
+	'abs': abs,
 	'arcsin':arcsin,
 	'pow': pow,
 	'sub': sub,
