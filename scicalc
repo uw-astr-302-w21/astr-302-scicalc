@@ -57,6 +57,11 @@ def mul(*args):
 		prod *= arg
 	return prod
 
+def exp(x):
+    """Return Euler's number to the power of x"""
+    
+    return math.exp(x)
+
 def log(base,x):
 	"""Return a logarithm (of of any base base) of x"""
 	
@@ -92,6 +97,7 @@ operators = {
 	'sum': add,
 	'mul': mul,
 	'log10': log10,
+  'exp': exp,
 	'log': log,
 	'floordiv': floordiv,
 	'sqrt': sqrt,
