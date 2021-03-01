@@ -90,6 +90,11 @@ def log(base,x):
 	
 	return math.log(x, base)
 
+def pow(x, y):
+	"""Takes a number (x) and exponentiate to a power (y)"""
+	
+	return x**y
+
 def inv(x):
 	"""Return the inverse of a number"""
 	return 1/x
@@ -131,6 +136,7 @@ operators = {
 	'sin': sin,
 	'mul': mul,
 	'log10': log10,
+	'pow': pow,
 	'sub': sub,
 	'div': div,
 	'root': root,
