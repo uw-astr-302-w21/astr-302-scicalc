@@ -201,7 +201,8 @@ operators = {
 	'cos': cos,
 	'negOp': negOp,
 	'tang': tang,
-    'fact': fact
+    'fact': fact,
+    'ten': ten
 }
 
 if __name__ == "__main__":
