@@ -164,6 +164,11 @@ def asin(x):
     """Takes arcsine/inverse sine of angle x. x must be between -1 and 1. Returns degrees."""
     return round(math.degrees(math.asin(x)),3)
 
+def ten(x)
+	"""Returns 10 to the power of x"""
+	return 10**x
+	
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
